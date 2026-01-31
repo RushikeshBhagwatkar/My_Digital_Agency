@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Growth | Automation & Digital Marketing</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #2c3e50;
+            --accent-color: #f39c12;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 160px 0 100px 0;
+        }
+        
+        /* Service Cards */
+        .service-card {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            height: 100%;
+            background: white;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: rgba(13, 110, 253, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: #f8f9fa;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        /* Contact Section */
+        .contact-info-box {
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 10px;
+        }
+        .contact-info-box a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">
+                <span class="text-primary"><i class="fas fa-rocket me-2"></i>NextGen</span> Growth
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#automation">Automation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary px-4 rounded-pill" href="#contact">Get Proposal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Scale Your Business with <span class="text-warning">Intelligent Marketing</span></h1>
+                    <p class="lead mb-5 opacity-75">We combine creative strategy with AI automation to drive leads, manage content, and grow your revenue on autopilot.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg px-5 rounded-pill">Start Growth</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg px-5 rounded-pill">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="clients" class="py-5 bg-light">
+        <div class="container text-center">
+            <p class="text-muted fw-bold mb-4 text-uppercase ls-2">Trusted by 50+ Companies</p>
+            <div class="row justify-content-center align-items-center opacity-50 grayscale-logos">
+                <div class="col-6 col-md-2 mb-3"><i class="fab fa-google fa-2x"></i></div>
+                <div class="col-6 col-md-2 mb-3"><i class="fab fa-amazon fa-2x"></i></div>
+                <div class="col-6 col-md-2 mb-3"><i class="fab fa-microsoft fa-2x"></i></div>
+                <div class="col-6 col-md-2 mb-3"><i class="fab fa-spotify fa-2x"></i></div>
+                <div class="col-6 col-md-2 mb-3"><i class="fab fa-airbnb fa-2x"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">What We Do</h6>
+                <h2 class="fw-bold display-5">Full-Service Digital Marketing</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="icon-box"><i class="fas fa-search fa-2x text-primary"></i></div>
+                        <h4>SEO & Organic Growth</h4>
+                        <p class="text-muted">Rank #1 on Google. We optimize your site structure and content to drive free, high-quality traffic.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="icon-box"><i class="fas fa-bullseye fa-2x text-primary"></i></div>
+                        <h4>Paid Ads (PPC)</h4>
+                        <p class="text-muted">High-ROI campaigns on Google Ads and Meta. We target your ideal customer with precision.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="icon-box"><i class="fas fa-pen-fancy fa-2x text-primary"></i></div>
+                        <h4>Content Strategy</h4>
+                        <p class="text-muted">Blogs, whitepapers, and videos that establish your authority and convert readers into buyers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="automation" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h6 class="text-primary fw-bold text-uppercase">The Future is Now</h6>
+                    <h2 class="fw-bold display-5 mb-4">Marketing Automation</h2>
+                    <p class="lead text-muted">Stop doing manual work. We set up systems that work 24/7.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>Content Automation:</strong> AI-driven content scheduling and generation for consistent social presence.</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>Cold Outreach:</strong> Automated LinkedIn & Email sequences to book meetings while you sleep.</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>CRM Integration:</strong> Automatically sync leads from ads directly to your sales team.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-4 bg-white rounded shadow-sm h-100">
+                                <i class="fab fa-linkedin fa-3x text-primary mb-3"></i>
+                                <h5>LinkedIn Outreach</h5>
+                                <p class="small text-muted">Auto-connect and message target prospects safely.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 bg-white rounded shadow-sm h-100">
+                                <i class="fas fa-envelope-open-text fa-3x text-warning mb-3"></i>
+                                <h5>Drip Email Campaigns</h5>
+                                <p class="small text-muted">Nurture leads with automated sequences.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-4 bg-white rounded shadow-sm mt-3">
+                                <i class="fas fa-robot fa-3x text-secondary mb-3"></i>
+                                <h5>AI Content Creation</h5>
+                                <p class="small text-muted">Generate captions, blogs, and graphics instantly using custom AI models tailored to your brand voice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">150+</h2>
+                    <p class="mb-0 text-white-50">Projects Completed</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">10x</h2>
+                    <p class="mb-0 text-white-50">ROI Average</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">24/7</h2>
+                    <p class="mb-0 text-white-50">Automation Uptime</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">50+</h2>
+                    <p class="mb-0 text-white-50">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center fw-bold mb-5">What Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card p-5 rounded shadow-sm">
+                                    <p class="fs-5 fst-italic text-muted">"Their automation services changed our business. We went from sending 10 emails a day to reaching 500 prospects automatically. The ROI was instant."</p>
+                                    <div class="mt-4">
+                                        <h5 class="fw-bold mb-0">Sarah Jenkins</h5>
+                                        <small class="text-muted">CEO, TechStart Inc.</small>
+                                        <div class="text-warning small mt-1">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card p-5 rounded shadow-sm">
+                                    <p class="fs-5 fst-italic text-muted">"The content creation team is amazing. They handle everything from our blogs to LinkedIn posts. Highly recommended!"</p>
+                                    <div class="mt-4">
+                                        <h5 class="fw-bold mb-0">Rahul Mehta</h5>
+                                        <small class="text-muted">Founder, Mehta Logistics</small>
+                                        <div class="text-warning small mt-1">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="contact-info-box p-5 h-100">
+                        <h3 class="fw-bold mb-4">Let's Discuss Your Project</h3>
+                        <p class="mb-5">Ready to automate your growth? Fill out the form or reach us directly.</p>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-map-marker-alt fa-lg mt-1 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Office Address</h6>
+                                <p class="mb-0 opacity-75">123 Business Park, Sector 5, Pune, MH 411045</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-envelope fa-lg mt-1 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Email Us</h6>
+                                <a href="mailto:hello@nextgen.com" class="opacity-75">hello@nextgen.com</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-5">
+                            <i class="fas fa-phone-alt fa-lg mt-1 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Call Us</h6>
+                                <a href="tel:+919876543210" class="opacity-75">+91 98765 43210</a>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto">
+                            <h6 class="fw-bold mb-3">Follow Us</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="p-4 bg-light rounded">
+                        <h3 class="fw-bold mb-4">Send us a Message</h3>
+                        
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Your Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="text" name="phone" class="form-control" placeholder="+91..." required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Business Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="john@company.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Service Interested In</label>
+                                <select name="service" class="form-select">
+                                    <option>Marketing Automation</option>
+                                    <option>SEO & Organic Growth</option>
+                                    <option>Paid Ads</option>
+                                    <option>Content Creation</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Message</label>
+                                <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your project..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="ratio ratio-21x9 rounded overflow-hidden shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.123456789!2d73.856743!3d18.520430!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEzLjUiTiA3M8KwNTEnMjQuMyJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 NextGen Growth. All Rights Reserved.</p>
+            <small class="text-white-50">Designed for High Performance.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
